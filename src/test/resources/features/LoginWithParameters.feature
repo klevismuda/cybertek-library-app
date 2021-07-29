@@ -15,10 +15,10 @@ Feature: Login with parameters
     And click the sign in button
     Then there should be 5586 users
     And dashboard should be displayed
-
+@wip2
   Scenario: Login as student 13
     Given I am on the login page
-    When I enter username "librarian13@library"
+    When I enter username "student13@library"
     And I enter password 'zcVbvUWH'
     And click the sign in button
     And dashboard should be displayed
