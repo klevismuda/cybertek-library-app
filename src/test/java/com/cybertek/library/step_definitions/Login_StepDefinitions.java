@@ -34,8 +34,9 @@ public class Login_StepDefinitions {
     }
     @Then("dashboard should be displayed")
     public void dashboard_should_be_displayed() {
+        BrowserUtils.wait(2);
         String actualDashboard = Driver.getDriver().getTitle();
-        String expectedDashboard = "Login - Library";
+        String expectedDashboard = "Library";
         Assert.assertEquals(actualDashboard, expectedDashboard);
     }
 
